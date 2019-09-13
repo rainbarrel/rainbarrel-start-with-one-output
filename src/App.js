@@ -74,10 +74,18 @@ class Raindrops extends React.Component {
       //   // );
       // }
 
+
       return (
-        <div>
-          <p style={{ flex: 1 }}>{command}</p>
-          <img src={currentUrl} />
+        <div style={{ display: 'relative' }}>
+          <p style={{ flex: 1,  }}>({command})</p>
+          <div style={{position: 'absolute', width: 640, height: 360, top: 80, left: 30, display: 'flex', justifyContent: 'center'}}>
+            <div style={{ display: 'flex', justifyContent: 'center'}}>
+            <img src={currentUrl}  style={{ maxHeight: '100%', maxWidth: '100%', verticalAlign: 'middle', display: 'inline-block', margin: 'auto'}}/>
+            </div>
+           
+          </div>
+          <img src="https://firebasestorage.googleapis.com/v0/b/rainbarrel-dev.appspot.com/o/images%2Ftv-shot.png?alt=media&token=2817d1d6-860b-4990-8eeb-b9f027907486"
+          style={{ width: 700, height: 500 }} />
         </div>
       );
       
